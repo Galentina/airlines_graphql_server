@@ -1,0 +1,26 @@
+{
+  "name": "airlines_server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@apollo/graphql": "^14.5.0",
+    "apollo-server": "^3.5.0",
+    "apollo-server-express": "^3.5.0",
+    "boxen": "^6.2.1",
+    "chalk": "^5.0.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.2",
+    "graphql": "^15.8.0",
+    "lodash": "^4.17.21",
+    "node-html-parser": "^5.1.0",
+    "nodemon": "^2.0.15"
+  }
+}
