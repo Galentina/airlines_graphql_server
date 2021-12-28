@@ -2,23 +2,27 @@ const UserList = [
     {
         id: 1,
         name: "John",
+        password: 'john20',
         username: "john",
+        email: 'john@john.com',
         age: 20,
-        nationality: "CANADA",
+        nationality: "CANADIAN",
         friends: [
             {
                 id: 3,
                 name: "Julia",
                 username: "julia",
+                email: 'julia@julia.com',
                 age: 40,
-                nationality: "GERMANY"
+                nationality: "GERMAN"
             },
             {
                 id: 4,
                 name: "Mary",
                 username: "mary",
+                email: 'mary@mary.com',
                 age: 50,
-                nationality: "RUSSIA"
+                nationality: "RUSSIAN"
             }
         ],
         flights: [
@@ -28,21 +32,26 @@ const UserList = [
     {
         id: 2,
         name: "Mike",
+        password: 'mike30',
         username: "mike",
+        email: 'mike@mike.com',
         age: 30,
         nationality: "NETHERLANDS"
     },
     {
         id: 3,
         name: "Julia",
+        password: 'julia40',
         username: "julia",
+        email: 'julia@julia.com',
         age: 40,
-        nationality: "GERMANY",
+        nationality: "GERMAN",
         friends: [
             {
                 id: 2,
                 name: "Mike",
                 username: "mike",
+                email: 'mike@mike.com',
                 age: 30,
                 nationality: "NETHERLANDS"
             }
@@ -54,9 +63,11 @@ const UserList = [
     {
         id: 4,
         name: "Mary",
+        password: 'mary50',
         username: "mary",
+        email: 'mary@mary.com',
         age: 50,
-        nationality: "RUSSIA"
+        nationality: "RUSSIAN"
     }
 ]
 

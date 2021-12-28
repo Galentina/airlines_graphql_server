@@ -42,12 +42,12 @@ const resolvers = {
         }
     },
 
-    User: {
-        chosenFlights: () => {
-            return _.filter(FlightList, (flight) =>
-                Number(flight.date.split('-').join(''))>= 20220104 && Number(flight.date.split('-').join(''))<= 20220115)
-        }
-    },
+    // User: {
+    //     chosenFlights: () => {
+    //         return _.filter(FlightList, (flight) =>
+    //             Number(flight.date.split('-').join(''))>= 20220104 && Number(flight.date.split('-').join(''))<= 20220115)
+    //     }
+    // },
 
     Mutation: {
         createUser: (parent, args) => {

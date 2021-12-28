@@ -12,9 +12,11 @@ const typeDefs = gql`
     type User {
         id: ID!
         name: String!
+        password: String!
         username: String!
         age: Int!
         nationality: Nationality!
+        email: String!
         friends: [User]
         chosenFlights: [Flight]
     }
@@ -32,9 +34,11 @@ const typeDefs = gql`
     
     input CreateUserInput {
         name: String!
+        password: String!
         username: String!
         age: Int!
-        nationality: Nationality = CANADA
+        nationality: Nationality = CANADIAN
+        email: String!
     }
     
     input UpdateUsernameInput {
@@ -50,10 +54,118 @@ const typeDefs = gql`
     }
     
     enum Nationality {
-        CANADA
-        GERMANY
+        AFGHAN
+        ALBANIAN
+        ALGERIAN
+        ARGENTINE
+        AUSTRALIAN
+        AUSTRIAN
+        BANGLADESHI
+        BELGIAN
+        BOLIVIAN
+        BATSWANA
+        BRAZILIAN
+        BULGARIAN
+        CAMBODIAN
+        CAMEROONIAN
+        CANADIAN
+        CHILEAN
+        CHINESE
+        COLOMBIAN
+        COSTA_RICAN
+        CROATIAN
+        CUBAN
+        CZECH
+        DANISH
+        DOMINICAN
+        ECUADORIAN
+        EGYPTIAN
+        SALVADORIAN
+        ENGLISH
+        ESTONIAN
+        ETHIOPIAN
+        FIJIAN
+        FINNISH
+        FRENCH
+        GERMAN
+        GHANAIAN
+        GREEK
+        GUATEMALAN
+        HAITIAN
+        HONDURAN
+        HUNGARIAN
+        ICELANDIC
+        INDIAN
+        INDONESIAN
+        IRANIAN
+        IRAQI
+        IRISH
+        ISRAELI
+        ITALIAN
+        JAMAICAN
+        JAPANESE
+        JORDANIAN
+        KENYAN
+        KUWAITI
+        LAO
+        LATVIAN
+        LEBANESE
+        LIBYAN
+        LITHUANIAN
+        MALAGASY
+        MALAYSIAN
+        MALIAN
+        MALTESE
+        MEXICAN
+        MONGOLIAN
+        MOROCCAN
+        MOZAMBICAN
+        NAMIBIAN
+        NEPALESE
         NETHERLANDS
-        RUSSIA
+        NEW_ZEALAND
+        NICARAGUAN
+        NIGERIAN
+        NORWEGIAN
+        PAKISTANI
+        PANAMANIAN
+        PARAGUAYAN
+        PERUVIAN
+        PHILIPPINE
+        POLISH
+        PORTUGUESE
+        ROMANIAN
+        RUSSIAN
+        SAUDI
+        SCOTTISH
+        SENEGALESE
+        SERBIAN
+        SINGAPOREAN
+        SLOVAK
+        SOUTH_AFRICAN
+        KOREAN
+        SPANISH
+        SRI_LANKAN
+        SUDANESE
+        SWEDISH
+        SWISS
+        SYRIAN
+        TAIWANESE
+        TAJIKISTANI
+        THAI
+        TONGAN
+        TUNISIAN
+        TURKISH
+        UKRAINIAN
+        EMIRATI
+        BRITISH
+        AMERICAN
+        URUGUAYAN
+        VENEZUELAN
+        VIETNAMESE
+        WELSH
+        ZAMBIAN
+        ZIMBABWEAN
     }
  
 `
