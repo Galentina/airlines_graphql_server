@@ -22,7 +22,7 @@ const typeDefs = gql`
     }
 
     type Query {
-        users: [User!]!
+        users: UsersResult
         flights: [Flight]!
         flight: Flight!
         user(id: ID!): User!
@@ -52,6 +52,15 @@ const typeDefs = gql`
         updateUsername(input: UpdateUsernameInput): User
         deleteUser(id: ID!): User
     }
+    
+    type UsersSuccessfulResult {
+        users: [User!]!
+    }
+    type UsersErrorResult {
+        message: String!
+    }
+    
+    union UsersResult = UsersSuccessfulResult | UsersErrorResult
     
     enum Nationality {
         AFGHAN
